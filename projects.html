@@ -1,0 +1,71 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<main>
+  <div class="page-wrap">
+
+    <header class="page-hd fade-up">
+      <span class="page-eyebrow">Projects</span>
+      <h1>Work that <em>ships.</em></h1>
+      <p class="lead">Security labs, policy research, and software — organized by discipline.</p>
+    </header>
+
+    {% assign security_projects = site.projects | where: "category", "Security & Forensics" %}
+    {% if security_projects.size > 0 %}
+    <div class="section fade-up-2">
+      <div class="section-head"><span class="section-title">Security & Forensics</span></div>
+      <div class="project-grid">
+        {% for project in security_projects %}
+        <div class="project-card">
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.summary }}</p>
+          <div class="tag-list">
+            {% for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% assign policy_projects = site.projects | where: "category", "Policy Research" %}
+    {% if policy_projects.size > 0 %}
+    <div class="section fade-up-3">
+      <div class="section-head"><span class="section-title">Policy Research</span></div>
+      <div class="project-grid">
+        {% for project in policy_projects %}
+        <div class="project-card">
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.summary }}</p>
+          <div class="tag-list">
+            {% for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% assign software_projects = site.projects | where: "category", "Software" %}
+    {% if software_projects.size > 0 %}
+    <div class="section fade-up-4">
+      <div class="section-head"><span class="section-title">Software</span></div>
+      <div class="project-grid">
+        {% for project in software_projects %}
+        <div class="project-card">
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.summary }}</p>
+          <div class="tag-list">
+            {% for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</main>

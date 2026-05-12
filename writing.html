@@ -1,0 +1,49 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+
+<main>
+  <div class="page-wrap">
+
+    <header class="page-hd fade-up">
+      <span class="page-eyebrow">Writing</span>
+      <h1>Analysis at the <em>intersection.</em></h1>
+      <p class="lead">Security, technology law, and AI governance — with technical accuracy most policy commentary lacks.</p>
+    </header>
+
+    <div class="fade-up-2">
+      <div class="filter-bar">
+        <button class="btn btn-primary" onclick="filterPosts(this, 'all')">All</button>
+        <button class="btn btn-ghost" onclick="filterPosts(this, 'policy')">Policy</button>
+        <button class="btn btn-ghost" onclick="filterPosts(this, 'security')">Security</button>
+        <button class="btn btn-ghost" onclick="filterPosts(this, 'ai')">AI</button>
+      </div>
+
+      <div class="post-list" id="post-list">
+        {% for post in site.posts %}
+        <div class="post-row" data-tag="{{ post.tag }}">
+          <div class="post-meta-date">{{ post.date | date: "%Y" }}<br>{{ post.date | date: "%b %-d" }}</div>
+          <div>
+            {% if post.tag %}<span class="post-tag {{ post.tag }}">{{ post.tag | capitalize }}</span>{% endif %}
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+function filterPosts(btn, tag) {
+  document.querySelectorAll('.filter-bar .btn').forEach(b => b.className = 'btn btn-ghost');
+  btn.className = 'btn btn-primary';
+  document.querySelectorAll('.post-row').forEach(row => {
+    row.style.display = (tag === 'all' || row.dataset.tag === tag) ? 'grid' : 'none';
+  });
+}
+</script>

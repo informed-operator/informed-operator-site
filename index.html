@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<main>
+  <div class="page-wrap">
+
+    <section class="hero">
+      <div class="hero-label fade-up">Cybersecurity · Technology Policy · AI Governance</div>
+      <h1 class="fade-up-2">Where the <em>technical</em><br>meets the consequential.</h1>
+      <p class="hero-sub fade-up-3">Writing and projects at the intersection of offensive security, technology law, and AI governance — from someone who spent a decade building the systems under discussion.</p>
+      <div class="btn-row fade-up-4">
+        <a href="{{ '/writing/' | relative_url }}" class="btn btn-primary">Read the writing</a>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn-ghost">About the author</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="section-title">Recent writing</span>
+        <a href="{{ '/writing/' | relative_url }}" class="section-more">All posts →</a>
+      </div>
+      <div class="post-list">
+        {% assign recent_posts = site.posts | limit: 3 %}
+        {% for post in recent_posts %}
+        <div class="post-row">
+          <div class="post-meta-date">{{ post.date | date: "%Y" }}<br>{{ post.date | date: "%b %-d" }}</div>
+          <div>
+            {% if post.tag %}<span class="post-tag {{ post.tag }}">{{ post.tag | capitalize }}</span>{% endif %}
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="section-title">Projects</span>
+        <a href="{{ '/projects/' | relative_url }}" class="section-more">All projects →</a>
+      </div>
+      <div class="project-grid">
+        {% assign featured = site.projects | where: "featured", true | limit: 2 %}
+        {% for project in featured %}
+        <div class="project-card">
+          {% if project.category %}<div class="project-card-label">{{ project.category }}</div>{% endif %}
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.summary }}</p>
+          <div class="tag-list">
+            {% for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+  </div>
+</main>

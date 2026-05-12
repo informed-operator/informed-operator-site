@@ -1,0 +1,39 @@
+title: Informed Operator
+description: Writing and projects at the intersection of cybersecurity, technology policy, and AI governance.
+url: "https://informedoperator.com"
+baseurl: ""
+
+author:
+  name: Ryan McGregor
+  linkedin: https://linkedin.com/in/infosec-ryan-mcgregor
+  github: https://github.com
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /writing/:year/:month/:day/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
