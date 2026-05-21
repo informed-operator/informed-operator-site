@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Business Continuity & Disaster Recovery Plan"
 summary: "A full BCP/DRP with ransomware threat modeling, asset classification, recovery objectives, and incident response structure — developed as graduate coursework."
 category: "Security & Forensics"
