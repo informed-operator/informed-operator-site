@@ -1,12 +1,12 @@
 title: Informed Operator
 description: Writing and projects at the intersection of cybersecurity, technology policy, and AI governance.
-url: "https://informedoperator.com"
+url: "https://informed-operator.com"
 baseurl: ""
 
 author:
   name: Ryan McGregor
   linkedin: https://linkedin.com/in/infosec-ryan-mcgregor
-  github: https://github.com
+  github: https://github.com/informed-operator
 
 # Build
 markdown: kramdown
