@@ -4,6 +4,7 @@ title: "Autonomous Weapons & IHL: A Legal Analysis"
 summary: "Research examining human-in/on/out-of-loop configurations, Explainable AI requirements, and culpability frameworks under international humanitarian law."
 category: "Policy Research"
 tags: [AI Governance, IHL, Policy]
+tag: ai
 featured: true
 ---
 
