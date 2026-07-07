@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Google's Alleged Secondary Liability in Character.ai Lawsuit"
+excerpt: "What was the nature of Google's relationship with Character.AI - typical service provider or low key partner?"
 category: "Policy Research"
 tags: [AI Governance, Policy]
 tag: ai
