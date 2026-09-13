@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Benefits of GRC Engineering"
-#excerpt: "What was the nature of Google's relationship with Character.AI - typical service provider or low key partner?"
+excerpt: "Security has been perceived as an afterthought in some product development lifecycles. This is the antidote..."
 #category: "Policy Research"
 tags: [GRC Engineering]
 tag: grc
