@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Examining the class action suit against a parasocial creation platform"
+excerpt: "Users were promised direct communication with a public figure.  This suit alleges they did not receive the genuine article."
+category: "Policy Research"
+tags: [Policy]
+tag: policy
+featured: true
+---
+
+Industrial-grade catfishing. This is what the class action suit N.Z. et al. v. FIL et al. alleges takes place on the platform owned by U.K.-based Fenix International Limited (FIL). The platform operates on a model promising subscribers direct, one-on-one communication with creators. This "direct communication" promise is baked into the platform’s subscription UI—beyond a creator's ability to modify or remove—and is heavily promoted across off-platform marketing channels. In practice, this design incentivizes deep parasocial trust, leading users to divulge highly personal information, including Personally Identifiable Information (PII). The suit alleges this trust is systematically broken. To scale reach and revenue, creator accounts are routinely handed over to management agencies that deploy a revolving cast of undisclosed impersonators, known as "chatters". In many high-volume accounts, the creator rarely, if ever, logs in.  On its face, this practice violates the platform’s own Terms of Service, which mandate that only the verified creator may access the account. Under standard enterprise Identity and Access Management (IAM) controls, dozens of concurrent logins across disparate devices and geo-locations would trigger automated anomaly detection and lock the account. However, third-party agency software actively subverts these security controls. Tools like Supercreator explicitly market features designed to bypass platform detection. In its own promotional materials, Supercreator boasts that it "spoofs device IDs... to avoid detection of multiple logins" and "prevents account flagging," highlighting how useful this cloaking is "as chatters come and go." Furthermore, by combining AI-suggested messaging with automated scripts and mass messaging tools, these middleware platforms undermine the core premise of authentic, one-on-one human connection while exposing sensitive user data to unvetted shift workers.
+
+FIL's primary statutory defense relies on Section 230(c)(1) of the Communications Decency Act. Long considered a bedrock of the U.S. digital economy, Section 230(c)(1) establishes that providers of interactive computer services cannot be treated as the publisher or speaker of third-party content. Without this shield, most modern platforms would face unsustainable liability for failing to vet all user-generated material.
+
+In N.Z. v. FIL, the court applied this boundary precisely: while Section 230 protects FIL from liability for hosting third-party user interactions, it does not shield the platform’s own affirmative representations regarding authentic, 1-on-1 creator access. Under the Roommates.com doctrine, platform immunity vanishes if a platform materially contributes to the creation or development of the deceptive trade practice.
+
+This raises a critical GRC question regarding constructive knowledge. Even if software like Supercreator spoofs device IDs to evade baseline IAM controls, aggregating mouse movements and text inputs from dozens of concurrent shift workers generates unnatural, highly anomalous traffic patterns. To any modern Web Application Firewall or anomaly engine monitoring WebSocket connections, this burst of simultaneous activity does not look like a single user on a laptop—it looks like a high-volume enterprise operation.
+
+The plaintiffs would argue that this amounts to complicity on the part of FIL, in large part motivated by the 20% cut from all transactions on the platform.  Currently, the case is ongoing in California Central District Court.
