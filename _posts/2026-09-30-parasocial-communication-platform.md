@@ -2,10 +2,10 @@
 layout: post
 title: "Examining the class action suit against a parasocial creation platform"
 excerpt: "Users were promised direct communication with a public figure.  This suit alleges they did not receive the genuine article."
-category: "Policy Research"
+#category: "Policy Research"
 tags: [Policy]
 tag: policy
-featured: true
+#featured: true
 ---
 
 Industrial-grade catfishing. This is what the class action suit N.Z. et al. v. FIL et al. alleges takes place on the platform owned by U.K.-based Fenix International Limited (FIL). The platform operates on a model promising subscribers direct, one-on-one communication with creators. This "direct communication" promise is baked into the platform’s subscription UI—beyond a creator's ability to modify or remove—and is heavily promoted across off-platform marketing channels. In practice, this design incentivizes deep parasocial trust, leading users to divulge highly personal information, including Personally Identifiable Information (PII). The suit alleges this trust is systematically broken. To scale reach and revenue, creator accounts are routinely handed over to management agencies that deploy a revolving cast of undisclosed impersonators, known as "chatters". In many high-volume accounts, the creator rarely, if ever, logs in.  On its face, this practice violates the platform’s own Terms of Service, which mandate that only the verified creator may access the account. Under standard enterprise Identity and Access Management (IAM) controls, dozens of concurrent logins across disparate devices and geo-locations would trigger automated anomaly detection and lock the account. However, third-party agency software actively subverts these security controls. Tools like Supercreator explicitly market features designed to bypass platform detection. In its own promotional materials, Supercreator boasts that it "spoofs device IDs... to avoid detection of multiple logins" and "prevents account flagging," highlighting how useful this cloaking is "as chatters come and go." Furthermore, by combining AI-suggested messaging with automated scripts and mass messaging tools, these middleware platforms undermine the core premise of authentic, one-on-one human connection while exposing sensitive user data to unvetted shift workers.
