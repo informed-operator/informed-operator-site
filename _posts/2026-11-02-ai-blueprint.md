@@ -21,7 +21,7 @@ Secure the infrastructure, which will help to retain operational visibility and 
 
 # Models
 
-Verfify the supply chain. Treat foundation models as verifiable software artifacts rather than trusted black boxes.
+Verify the supply chain. Treat foundation models as verifiable software artifacts rather than trusted black boxes.
 
 **For Enterprises:** Adopt Machine Learning Software Bills of Materials (ML-SBOMs). Require strict model cards, verified training data lineage, and programmatic pre-deployment testing. Use policy-as-code engines to automatically evaluate models against safety, compliance, and operational criteria before they merge into production pipelines.
 
@@ -35,4 +35,4 @@ Secure ingress and egress points against data leakage, poisoning, and privacy vi
 
 **For Practitioners:** Leverage localized vector databases or local Retrieval-Augmented Generation (RAG) architectures to keep proprietary context close to home, preventing accidental exposure in public collection loops.
 
-AI governance is not a static PDF sitting on a shared drive (or anything static); it is an active, automated control system. By taking ownership of compute, models, and data, organizations do far less firefighting and start building more fire resistant, self-governing systems.
+AI governance is not a static PDF sitting on a shared drive; it is an active, automated control system. By taking ownership of compute, models, and data, organizations do far less firefighting and start building more fire resistant, self-governing systems.
